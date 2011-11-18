@@ -1,6 +1,5 @@
 html,body{
   margin:0;
-  height:100%;
   background:url(../images/px_by_Gre3g.png);
   font-family: 'Helvetica Neue', sans-serif;
 }
@@ -87,67 +86,14 @@ a.icon img:hover {
   z-index:2;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
+h1{
+  font-size:200px;
+  line-height:0.9;
 }
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
+#wrapper{
+  width:463px;
+  margin:0 auto;
 }
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-  h1{
-    font-size:200px;
-    line-height:0.9;
-  }
-  #wrapper{
-    width:463px;
-    margin:0 auto;
-  }
-  #content{
-    padding:10px;
-  }
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
+#content{
+  padding:10px;
 }
