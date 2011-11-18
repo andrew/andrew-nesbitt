@@ -23,42 +23,22 @@ text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);
   position:relative;
 }
 
-#andrew, #nesbitt{
-  position:absolute;
-  height:180px;
-  -webkit-transition: all .5s ease-in-out;
-}
-
 #andrew{
-  top:40px;
+  top:0px;
 }
 
 #nesbitt{
-  top:220px;
+  top:260px;
 }
 
 #desc{
   position:absolute;
   top:180px;
-  height:0;
+  height:80px;
   margin:0;
-  opacity:0;
-  width:460px;
+  opacity:1;
   font-size:14px;
   -webkit-transition: all .5s ease-in-out;
-}
-
-#wrapper:hover #andrew{
-  top:0px;
-}
-
-#wrapper:hover #nesbitt{
-  top:260px;
-}
-
-#wrapper:hover #desc{
-  height:80px;
-  opacity:1;
 }
 
 #social{
@@ -89,6 +69,9 @@ a.icon img:hover {
 h1{
   font-size:200px;
   line-height:0.9;
+  position:absolute;
+  height:180px;
+  -webkit-transition: all .5s ease-in-out;
 }
 #wrapper{
   width:463px;
@@ -96,4 +79,72 @@ h1{
 }
 #content{
   padding:10px;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  h1{
+    font-size:120px;
+    height:120px;
+    position:static !important;
+  }
+  #wrapper{
+    margin:5px;
+    width:auto;
+  }
+  #social{
+    margin:0;
+  }
+  #desc{
+    width:auto;
+    height:200px;
+    position:static !important;
+  }
+  p{
+    font-size:16px;
+  }
+  a.icon img{
+    opacity:1;
+    height:32px;
+    width:32px;
+    margin-right:5px;
+    margin-bottom:5px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  #andrew{
+    top:40px;
+  }
+
+  #nesbitt{
+    top:220px;
+  }
+
+  #desc{
+    position:absolute;
+    top:180px;
+    height:0;
+    margin:0;
+    opacity:0;
+    width:460px;
+    font-size:14px;
+    -webkit-transition: all .5s ease-in-out;
+  }
+
+  #wrapper:hover #andrew{
+    top:0px;
+  }
+
+  #wrapper:hover #nesbitt{
+    top:260px;
+  }
+
+  #wrapper:hover #desc{
+    height:80px;
+    opacity:1;
+  }
 }
