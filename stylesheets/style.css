@@ -1,0 +1,153 @@
+html,body{
+  margin:0;
+  height:100%;
+  background:url(../images/px_by_Gre3g.png);
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1,h2,h3{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+h1{
+  font-size:80px;
+  margin:0;
+}
+
+h1, p{
+  color:#fff;
+-webkit-mask-image: url(../images/mask.png);
+text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);
+}
+
+#wrapper{
+  position:relative;
+}
+
+#andrew, #nesbitt{
+  position:absolute;
+  height:180px;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+#andrew{
+  top:40px;
+}
+
+#nesbitt{
+  top:220px;
+}
+
+#desc{
+  position:absolute;
+  top:180px;
+  height:0;
+  margin:0;
+  opacity:0;
+  width:460px;
+  font-size:14px;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+#wrapper:hover #andrew{
+  top:0px;
+}
+
+#wrapper:hover #nesbitt{
+  top:260px;
+}
+
+#wrapper:hover #desc{
+  height:80px;
+  opacity:1;
+}
+
+#social{
+  margin-left:30px;
+}
+
+a.icon{
+  display:inline-block;
+}
+
+a.icon img{
+  width:24px;
+  height:24px;
+  -webkit-transition: all .1s ease-in-out;
+  opacity:0.9;
+  z-index:1;
+  position:relative;
+  margin-right:2px;
+}
+
+a.icon img:hover {
+  -webkit-transform: scale(1.5);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  opacity:1;
+  z-index:2;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  h1{
+    font-size:200px;
+    line-height:0.9;
+  }
+  #wrapper{
+    width:463px;
+    margin:0 auto;
+  }
+  #content{
+    padding:10px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
